@@ -17,11 +17,11 @@ const delay = randomIntegerFromInterval(200, 500);
  return promise
   };
   
-  const logSuccess = ({id,time}) => {
-    console.log(`Transaction ${id} processed in ${time}ms`);
+  const logSuccess = ({id,amount}) => {
+    console.log(`Transaction ${id} processed in ${amount}ms`);
   };
   
-  const logError = id => {
+  const logError = ({id}) => {
     console.warn(`Error processing transaction ${id}. Please try again later.`);
   };
   
